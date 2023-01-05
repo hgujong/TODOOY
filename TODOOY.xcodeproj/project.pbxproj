@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4FE2A329640F3A00985D16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B4FE2A229640F3A00985D16 /* GoogleService-Info.plist */; };
 		4B5FE4D6295AD0FA003FD882 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5FE4D5295AD0FA003FD882 /* FirebaseAuth */; };
 		4B5FE4D8295AD0FA003FD882 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5FE4D7295AD0FA003FD882 /* FirebaseFirestore */; };
-		4B5FE4DA295AD1C2003FD882 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5FE4D9295AD1C1003FD882 /* GoogleService-Info.plist */; };
 		4B5FE4DE295AD65F003FD882 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FE4DC295AD65E003FD882 /* Profile.swift */; };
 		4B5FE4DF295AD65F003FD882 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FE4DD295AD65E003FD882 /* ModelData.swift */; };
 		4B5FE4F2295AD670003FD882 /* CalendarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FE4E2295AD670003FD882 /* CalendarHome.swift */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B5FE4D9295AD1C1003FD882 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B4FE2A229640F3A00985D16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4B5FE4DC295AD65E003FD882 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		4B5FE4DD295AD65E003FD882 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		4B5FE4E2295AD670003FD882 /* CalendarHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHome.swift; sourceTree = "<group>"; };
@@ -112,9 +112,9 @@
 		4B5FE4EE295AD670003FD882 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
+				4B5FE4F1295AD670003FD882 /* ProfileHost.swift */,
 				4B5FE4EF295AD670003FD882 /* ProfileSummary.swift */,
 				4B5FE4F0295AD670003FD882 /* ProfileEditor.swift */,
-				4B5FE4F1295AD670003FD882 /* ProfileHost.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 				4B5FE4DB295AD65E003FD882 /* Model */,
 				4B933B28295AC710001B29BD /* TODOOYApp.swift */,
 				4B933B2A295AC710001B29BD /* ContentView.swift */,
+				4B4FE2A229640F3A00985D16 /* GoogleService-Info.plist */,
 				4B933B2C295AC712001B29BD /* Assets.xcassets */,
-				4B5FE4D9295AD1C1003FD882 /* GoogleService-Info.plist */,
 				4B933B2E295AC712001B29BD /* Preview Content */,
 			);
 			path = TODOOY;
@@ -224,7 +224,7 @@
 			files = (
 				4B933B30295AC712001B29BD /* Preview Assets.xcassets in Resources */,
 				4B933B2D295AC712001B29BD /* Assets.xcassets in Resources */,
-				4B5FE4DA295AD1C2003FD882 /* GoogleService-Info.plist in Resources */,
+				4B4FE2A329640F3A00985D16 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct ProfileSummary: View {
     var image: Image
     var profile: Profile
+    var imail = ""
+    var psw = ""
+    
+    let email = Auth.auth().currentUser?.email ?? "User"
     
     var body: some View {
         VStack {
@@ -27,16 +33,17 @@ struct ProfileSummary: View {
                     Text("User Name: ")
                         .bold()
                     
-                    Text("User ID: ")
+                    Text("User Email: ")
                         .bold()
                 }
                 .padding([.horizontal])
                 
                 VStack(alignment: .leading) {
-                    Text(profile.username)
+                    
+                    Text(profile.mail)
                         .bold()
                     
-                    Text(profile.userid)
+                    Text(email)
                         .bold()
                 }
                 .padding([.horizontal])

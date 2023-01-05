@@ -15,13 +15,13 @@ struct ProfileEditor: View {
             HStack {
                 Text("Username").bold()
                 Divider()
-                TextField("Username", text: $profile.username)
+                TextField("Username", text: $profile.mail)
             }
             
             HStack {
                 Text("User id").bold().padding(.trailing, 25.0)
                 Divider()
-                TextField("Username", text: $profile.userid)
+                TextField("Username", text: $profile.pw)
             }
             
             Toggle(isOn: $profile.prefersNotifications) {

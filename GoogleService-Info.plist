@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>342473919379-fudimkjiti8g07jeo5p5vma1p7b5jj04.apps.googleusercontent.com</string>
+	<string>34843775816-96upa1l248tpnvssk061alru2qnetq3f.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.342473919379-fudimkjiti8g07jeo5p5vma1p7b5jj04</string>
+	<string>com.googleusercontent.apps.34843775816-96upa1l248tpnvssk061alru2qnetq3f</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCX0jkIBk4E2CelBaOR46ssNWs3S_GNDz0</string>
+	<string>AIzaSyDCEH9miPXDDjZsBYJoacUeZV5VBTWplnw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>342473919379</string>
+	<string>34843775816</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>kr.xoul.TODOOY</string>
 	<key>PROJECT_ID</key>
-	<string>todoy-b065f</string>
+	<string>todooy-153d4</string>
 	<key>STORAGE_BUCKET</key>
-	<string>todoy-b065f.appspot.com</string>
+	<string>todooy-153d4.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:342473919379:ios:d872566e16f844cabf3666</string>
+	<string>1:34843775816:ios:d0a1af5f4282c216d0997d</string>
 </dict>
 </plist>

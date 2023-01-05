@@ -8,9 +8,9 @@
 import Foundation
 
 struct Profile {
-    var username: String
-    var userid: String
+    var mail: String
+    var pw: String
     var prefersNotifications = true
     
-    static let `default` = Profile(username: "JongHyun", userid: "jhseo0704")
+    static let `default` = Profile(mail: "JongHyun", pw: "jhseo0704")
 }

@@ -10,12 +10,23 @@ import SwiftUI
 struct Calendar: View {
     @State var date = Date()
     
+    static let dateformat: DateFormatter = {
+          let formatter = DateFormatter()
+           formatter.dateFormat = "YYYY / M / d"
+           return formatter
+       }()
+    
     var body: some View {
-        DatePicker(
-            "DatePicker",
-            selection: $date
-        )
+        VStack {
+            DatePicker(
+                "DatePicker",
+                selection: $date,
+                displayedComponents: .date
+            )
             .datePickerStyle(.graphical)
+            
+            Text("Date is \(date, formatter: Calendar.dateformat)")
+        }
     }
 }
 

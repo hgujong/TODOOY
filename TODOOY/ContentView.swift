@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var userIsLoggedIn = false
     @State private var selection: Tab = .calendar
     
-    
+     
     var body: some View {
         if userIsLoggedIn {
             content
@@ -49,10 +49,10 @@ struct ContentView: View {
             Color.black
             
             RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .foregroundStyle(.linearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
-                .frame(width: 1000, height: 400)
-                .rotationEffect(.degrees(135))
-                .offset(y: -320)
+                .foregroundStyle(.linearGradient(colors: [.black, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+//                .frame(width: 1000, height: 400)
+//                .rotationEffect(.degrees(135))
+//                .offset(y: -320)
             
             VStack(spacing: 20) {
                 Text("TODOY")
