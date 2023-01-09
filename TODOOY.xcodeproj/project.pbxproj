@@ -19,6 +19,9 @@
 		4B5FE4F9295AD670003FD882 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FE4EF295AD670003FD882 /* ProfileSummary.swift */; };
 		4B5FE4FA295AD670003FD882 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FE4F0295AD670003FD882 /* ProfileEditor.swift */; };
 		4B5FE4FB295AD670003FD882 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FE4F1295AD670003FD882 /* ProfileHost.swift */; };
+		4B8BDB2B2967DB1800333A13 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BDB2A2967DB1800333A13 /* Login.swift */; };
+		4B8BDB2D2967E08200333A13 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BDB2C2967E08200333A13 /* Signin.swift */; };
+		4B8BDB2F2968070B00333A13 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BDB2E2968070B00333A13 /* Content.swift */; };
 		4B933B29295AC710001B29BD /* TODOOYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933B28295AC710001B29BD /* TODOOYApp.swift */; };
 		4B933B2B295AC710001B29BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B933B2A295AC710001B29BD /* ContentView.swift */; };
 		4B933B2D295AC712001B29BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B933B2C295AC712001B29BD /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 		4B5FE4EF295AD670003FD882 /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		4B5FE4F0295AD670003FD882 /* ProfileEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		4B5FE4F1295AD670003FD882 /* ProfileHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		4B8BDB2A2967DB1800333A13 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4B8BDB2C2967E08200333A13 /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
+		4B8BDB2E2968070B00333A13 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		4B933B25295AC710001B29BD /* TODOOY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOOY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B933B28295AC710001B29BD /* TODOOYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOOYApp.swift; sourceTree = "<group>"; };
 		4B933B2A295AC710001B29BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		4B5FE4E0295AD670003FD882 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B8BDB282967DAE700333A13 /* MAIN */,
 				4B5FE4E1295AD670003FD882 /* Calendars */,
 				4B5FE4E4295AD670003FD882 /* Setup */,
 				4B5FE4E8295AD670003FD882 /* StopWatch */,
@@ -117,6 +124,16 @@
 				4B5FE4F0295AD670003FD882 /* ProfileEditor.swift */,
 			);
 			path = Profiles;
+			sourceTree = "<group>";
+		};
+		4B8BDB282967DAE700333A13 /* MAIN */ = {
+			isa = PBXGroup;
+			children = (
+				4B8BDB2A2967DB1800333A13 /* Login.swift */,
+				4B8BDB2C2967E08200333A13 /* Signin.swift */,
+				4B8BDB2E2968070B00333A13 /* Content.swift */,
+			);
+			path = MAIN;
 			sourceTree = "<group>";
 		};
 		4B933B1C295AC710001B29BD = {
@@ -238,12 +255,15 @@
 				4B5FE4F2295AD670003FD882 /* CalendarHome.swift in Sources */,
 				4B933B2B295AC710001B29BD /* ContentView.swift in Sources */,
 				4B5FE4F9295AD670003FD882 /* ProfileSummary.swift in Sources */,
+				4B8BDB2B2967DB1800333A13 /* Login.swift in Sources */,
 				4B5FE4DF295AD65F003FD882 /* ModelData.swift in Sources */,
 				4B5FE4FA295AD670003FD882 /* ProfileEditor.swift in Sources */,
 				4B5FE4F6295AD670003FD882 /* Stopwatch.swift in Sources */,
 				4B5FE4DE295AD65F003FD882 /* Profile.swift in Sources */,
 				4B5FE4F8295AD670003FD882 /* FriendHome.swift in Sources */,
+				4B8BDB2F2968070B00333A13 /* Content.swift in Sources */,
 				4B5FE4FB295AD670003FD882 /* ProfileHost.swift in Sources */,
+				4B8BDB2D2967E08200333A13 /* Signin.swift in Sources */,
 				4B933B29295AC710001B29BD /* TODOOYApp.swift in Sources */,
 				4B5FE4F4295AD670003FD882 /* Calendar.swift in Sources */,
 			);

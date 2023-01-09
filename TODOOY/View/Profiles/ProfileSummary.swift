@@ -8,14 +8,18 @@
 import SwiftUI
 import Firebase
 import FirebaseAuth
+import FirebaseFirestore
 
 struct ProfileSummary: View {
+    @Binding var isLoggedIn: Bool
     var image: Image
     var profile: Profile
-    var imail = ""
-    var psw = ""
     
-    let email = Auth.auth().currentUser?.email ?? "User"
+    let email = Auth.auth().currentUser?.email ?? "UserEmail.com"
+    let uid = Auth.auth().currentUser?.uid ?? "UID"
+    let firebaseAuth = Auth.auth()
+    
+    
     
     var body: some View {
         VStack {
@@ -40,7 +44,7 @@ struct ProfileSummary: View {
                 
                 VStack(alignment: .leading) {
                     
-                    Text(profile.mail)
+                    Text(uid)
                         .bold()
                     
                     Text(email)
@@ -48,6 +52,20 @@ struct ProfileSummary: View {
                 }
                 .padding([.horizontal])
             }
+            Button {
+                do {
+                    try firebaseAuth.signOut()
+                    print("signout works")
+                    isLoggedIn = false
+                } catch let signOurError as NSError {
+                    print("ERROR: signout \(signOurError.localizedDescription)")
+                }
+            } label: {
+                Text("로그아웃")
+                    .foregroundColor(.red)
+                    .bold()
+            }
+            .padding()
             Spacer()
         }
         .padding()
@@ -56,6 +74,6 @@ struct ProfileSummary: View {
 
 struct ProfileSummary_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileSummary(image: Image("ProfilePic"), profile: Profile.default)
+        ProfileSummary(isLoggedIn: .constant(false), image: Image("ProfilePic"), profile: Profile.default)
     }
 }

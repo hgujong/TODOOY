@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CalendarHome: View {
+    @Binding var isLoggedIn: Bool
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
     
@@ -28,7 +29,7 @@ struct CalendarHome: View {
                 }
             }
             .sheet(isPresented: $showingProfile) {
-                ProfileHost()
+                ProfileHost(isLoggedIn: $isLoggedIn)
                     .environmentObject(ModelData())
             }
         }
@@ -37,7 +38,7 @@ struct CalendarHome: View {
 
 struct CalendarHome_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarHome()
+        CalendarHome(isLoggedIn: .constant(false))
             .environmentObject(ModelData())
     }
 }

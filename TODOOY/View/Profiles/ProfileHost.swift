@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileHost: View {
+    @Binding var isLoggedIn: Bool
     @Environment(\.editMode) var editMode
     @EnvironmentObject var modelData: ModelData
     @State private var draftProfile = Profile.default
@@ -28,7 +29,7 @@ struct ProfileHost: View {
             }
             
             if editMode?.wrappedValue == .inactive {
-                ProfileSummary(image: Image("ProfilePic"), profile: modelData.profile)
+                ProfileSummary(isLoggedIn: $isLoggedIn, image: Image("ProfilePic"), profile: modelData.profile)
             } else {
                 ProfileEditor(profile: $draftProfile)
                     .onAppear {
@@ -45,7 +46,7 @@ struct ProfileHost: View {
 
 struct ProfileHost_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileHost()
+        ProfileHost(isLoggedIn: .constant(false))
             .environmentObject(ModelData())
     }
 }
