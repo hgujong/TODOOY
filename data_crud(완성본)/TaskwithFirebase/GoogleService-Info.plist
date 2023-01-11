@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>251351907190-oekjbnae2m671ttf96vrvc7v0068engd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.251351907190-oekjbnae2m671ttf96vrvc7v0068engd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDzTmbkt-NWfnF-gS-6U484-nkBKSNHsRM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>251351907190</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kr.xoul.TaskwithFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>crud-eb93f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>crud-eb93f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:251351907190:ios:a697b257535975e0d81857</string>
+</dict>
+</plist>
