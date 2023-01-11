@@ -11,7 +11,7 @@ import Firebase
 struct ContentView: View {
     @State private var email = ""
     @State private var password = ""
-    @State private var userIsLoggedIn = false
+    @State private var userIsLoggedIn = true
     @State private var selection: Tab = .calendar
     
     
