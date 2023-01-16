@@ -17,18 +17,21 @@ struct CalendarHome: View {
     var body: some View {
         NavigationView {
             List {
-                Calendar().padding([.horizontal])
+                Calendar()//.padding([.horizontal])
                 
                 StopwatchView()
+                Spacer()
                 HStack{
                     Button {
                         presentAddTaskSheet.toggle()
                     } label: {
                         Text("Add Task")
                             .fontWeight(.bold)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color.white)
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
+                            .background(Color.blue)
+                            .cornerRadius(50)
                         }
                         .sheet(isPresented: $presentAddTaskSheet){
                         TaskEditView()
@@ -39,9 +42,11 @@ struct CalendarHome: View {
                     } label: {
                         Text("See Task")
                             .fontWeight(.bold)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color.white)
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
+                            .background(Color.purple)
+                            .cornerRadius(50)
                         }
                         .sheet(isPresented: $showPopup){
                         TaskList()
@@ -50,12 +55,13 @@ struct CalendarHome: View {
                 }
             }
             .listStyle(.inset)
-            .navigationTitle("Calendar")
             .toolbar {
-                Button {
-                    showingProfile.toggle()
-                } label: {
-                    Label("User Profile", systemImage: "person.crop.circle")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("User Profile", systemImage: "person.crop.circle")
+                    }
                 }
             }
             .sheet(isPresented: $showingProfile) {

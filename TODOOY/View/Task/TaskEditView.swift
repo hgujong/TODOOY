@@ -97,12 +97,6 @@ struct TaskEditView: View {
     }
   }
  
-//struct MovieEditView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MovieEditView()
-//    }
-//}
- 
 struct TaskEditView_Previews: PreviewProvider {
   static var previews: some View {
     let task = Task(task: "Task", time: "Time")

@@ -48,6 +48,8 @@
 		8233A47C296EB8CA009403A5 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8233A47B296EB8CA009403A5 /* FirebaseRemoteConfigSwift */; };
 		8233A47E296EB8CA009403A5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8233A47D296EB8CA009403A5 /* FirebaseStorage */; };
 		8233A480296EB8CA009403A5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 8233A47F296EB8CA009403A5 /* FirebaseStorageCombine-Community */; };
+		8233A48829752EA9009403A5 /* FriendEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233A48729752EA9009403A5 /* FriendEdit.swift */; };
+		8233A48A29753316009403A5 /* AddFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233A48929753316009403A5 /* AddFriend.swift */; };
 		823C31B1296EB11A000B0443 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823C31B0296EB119000B0443 /* Task.swift */; };
 		823C31B3296EB125000B0443 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823C31B2296EB125000B0443 /* TaskViewModel.swift */; };
 		823C31B5296EB12A000B0443 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823C31B4296EB12A000B0443 /* TasksViewModel.swift */; };
@@ -72,6 +74,8 @@
 		4B933B2A295AC710001B29BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B933B2C295AC712001B29BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B933B2F295AC712001B29BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8233A48729752EA9009403A5 /* FriendEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendEdit.swift; sourceTree = "<group>"; };
+		8233A48929753316009403A5 /* AddFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriend.swift; sourceTree = "<group>"; };
 		823C31B0296EB119000B0443 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		823C31B2296EB125000B0443 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		823C31B4296EB12A000B0443 /* TasksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
@@ -133,11 +137,10 @@
 		4B5FE4E0295AD670003FD882 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				823C31B6296EB13C000B0443 /* Task */,
 				4B5FE4E1295AD670003FD882 /* Calendars */,
-				4B5FE4E4295AD670003FD882 /* Setup */,
-				4B5FE4E8295AD670003FD882 /* StopWatch */,
+				823C31B6296EB13C000B0443 /* Task */,
 				4B5FE4EC295AD670003FD882 /* Friends */,
+				4B5FE4E8295AD670003FD882 /* StopWatch */,
 				4B5FE4EE295AD670003FD882 /* Profiles */,
 			);
 			path = View;
@@ -146,6 +149,7 @@
 		4B5FE4E1295AD670003FD882 /* Calendars */ = {
 			isa = PBXGroup;
 			children = (
+				4B5FE4E4295AD670003FD882 /* Setup */,
 				4B5FE4E2295AD670003FD882 /* CalendarHome.swift */,
 			);
 			path = Calendars;
@@ -171,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				4B5FE4ED295AD670003FD882 /* FriendHome.swift */,
+				8233A48729752EA9009403A5 /* FriendEdit.swift */,
+				8233A48929753316009403A5 /* AddFriend.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -339,11 +345,13 @@
 				4B5FE4F2295AD670003FD882 /* CalendarHome.swift in Sources */,
 				4B933B2B295AC710001B29BD /* ContentView.swift in Sources */,
 				4B5FE4F9295AD670003FD882 /* ProfileSummary.swift in Sources */,
+				8233A48829752EA9009403A5 /* FriendEdit.swift in Sources */,
 				4B5FE4DF295AD65F003FD882 /* ModelData.swift in Sources */,
 				823C31B1296EB11A000B0443 /* Task.swift in Sources */,
 				4B5FE4FA295AD670003FD882 /* ProfileEditor.swift in Sources */,
 				823C31B3296EB125000B0443 /* TaskViewModel.swift in Sources */,
 				823C31BC296EB13C000B0443 /* TaskEditView.swift in Sources */,
+				8233A48A29753316009403A5 /* AddFriend.swift in Sources */,
 				4B5FE4F6295AD670003FD882 /* Stopwatch.swift in Sources */,
 				823C31BB296EB13C000B0443 /* TaskList.swift in Sources */,
 				4B5FE4DE295AD65F003FD882 /* Profile.swift in Sources */,

@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct FriendHome: View {
+    @State var addFriendSheet = false
+     
+    private var addButton: some View {
+      Button(action: { self.addFriendSheet.toggle() }) {
+        Image(systemName: "plus")
+      }
+    }
+    
+    private func friendRow() -> some View {
+       NavigationLink(destination: FriendEdit()) {
+         VStack(alignment: .leading) {
+             HStack {
+                 Image(systemName: "person")
+                 Text("Chaeyeon")
+                     .font(.headline)
+             }
+             
+         }
+       }
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List {
+                friendRow()
+            }
+            .navigationTitle("Friends")
+           
+            .navigationBarItems(trailing: addButton)
+            .sheet(isPresented: self.$addFriendSheet) {
+                AddFriend() 
+            }
+        }
     }
 }
 

@@ -20,12 +20,13 @@ struct TaskList: View {
     }
      
     private func taskRowView(task: Task) -> some View {
-       NavigationLink(destination: TaskDetailsView(task: task)) { //MovieDetailsView.swift
+       NavigationLink(destination: TaskDetailsView(task: task)) {
          VStack(alignment: .leading) {
-           Text(task.task)
-             .font(.headline)
-           //Text(movie.description)
-           //  .font(.subheadline)
+             HStack {
+                 Image(systemName: "checkmark")
+                 Text(task.task)
+                     .font(.headline)
+             }
          }
        }
     }
